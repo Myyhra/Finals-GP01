@@ -22,6 +22,8 @@ public class SpecialOrb : MonoBehaviour
     bool isRed = false;
     [SerializeField] float turnRedDelay = 1.0f;
 
+    MeshRenderer meshRenderer;
+    SphereCollider collider;
     void Start()
     {
         sphereRenderer = GetComponent<Renderer>();
@@ -32,12 +34,15 @@ public class SpecialOrb : MonoBehaviour
         specialChildOrbs = GetComponentsInChildren<SpecialChildOrbs>();
         specialChildOrbTransform = GetComponentsInChildren<Transform>();
         
+        meshRenderer = GetComponent<MeshRenderer>();
+        collider = GetComponent<SphereCollider>();
+
         SpecialOrbsCountdown = specialOrbCount.Length;
     }
 
     void Update()
     {
-        if(SpecialOrbsCountdown <=0 && orbtoCoin == false)
+        if(SpecialOrbsCountdown <=0 && orbtoCoin == false && gameManager.dead == false)
         {
             TurntoCoin();
 
@@ -48,12 +53,38 @@ public class SpecialOrb : MonoBehaviour
     {
          foreach(Transform orbs in specialOrbTransform)
          {
-            foreach(Transform childOrbs in specialChildOrbTransform)
+            if(orbs.CompareTag("SpecialOrbs"))
             {
                 Instantiate(coin, orbs);
-                Instantiate(coin,childOrbs);
+            }
+            if(orbs.CompareTag("SpecialChildOrbs"))
+            {
+                Instantiate(coin, orbs);
+
             }
          }
+
+         foreach(SpecialChildOrbs childorbs in specialChildOrbs)
+         {
+              if(!childorbs.taken)
+              {
+                gameManager.OrbCount--;
+
+              }
+            
+         }
+        
+         foreach(SpecialOrbCount specialorb in specialOrbCount)
+         {
+            foreach(SpecialChildOrbs childOrbs in specialChildOrbs)
+            {
+                specialorb.destroy = true;
+                childOrbs.destroy = true;
+            }
+         }
+
+         meshRenderer.enabled = false;
+         collider.enabled = false;
          orbtoCoin = true;
     }
 

@@ -120,7 +120,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameManager: {fileID: 7256799182819420730, guid: 6a968689fea82f04db6fec55e0f0ddfb,
     type: 3}
-  coin: {fileID: 171168642575744558, guid: 9ff4e73597e768d46a1d1dfd1b9fd22c, type: 3}
+  coin: {fileID: 6445123460688982221, guid: 536768f26b50e0745b15b8cf6710d169, type: 3}
   turnRed: {r: 0.98039216, g: 0.43137255, b: 0.27450982, a: 0}
   turnRedDelay: 1
 --- !u!1 &435762314416597941
@@ -243,7 +243,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameManager: {fileID: 7256799182819420730, guid: 6a968689fea82f04db6fec55e0f0ddfb,
     type: 3}
-  coin: {fileID: 171168642575744558, guid: 9ff4e73597e768d46a1d1dfd1b9fd22c, type: 3}
+  coin: {fileID: 6445123460688982221, guid: 536768f26b50e0745b15b8cf6710d169, type: 3}
   turnRed: {r: 0.98039216, g: 0.43137255, b: 0.27450982, a: 0}
   turnRedDelay: 1
 --- !u!1 &791058464966499575
@@ -366,7 +366,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameManager: {fileID: 7256799182819420730, guid: 6a968689fea82f04db6fec55e0f0ddfb,
     type: 3}
-  coin: {fileID: 171168642575744558, guid: 9ff4e73597e768d46a1d1dfd1b9fd22c, type: 3}
+  coin: {fileID: 6445123460688982221, guid: 536768f26b50e0745b15b8cf6710d169, type: 3}
   turnRed: {r: 0.98039216, g: 0.43137255, b: 0.27450982, a: 0}
   turnRedDelay: 1
 --- !u!1 &1308538053888736189
@@ -489,7 +489,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameManager: {fileID: 7256799182819420730, guid: 6a968689fea82f04db6fec55e0f0ddfb,
     type: 3}
-  coin: {fileID: 171168642575744558, guid: 9ff4e73597e768d46a1d1dfd1b9fd22c, type: 3}
+  coin: {fileID: 6445123460688982221, guid: 536768f26b50e0745b15b8cf6710d169, type: 3}
   turnRed: {r: 0.98039216, g: 0.43137255, b: 0.27450982, a: 0}
   turnRedDelay: 1
 --- !u!1 &1941644862105021192
@@ -612,7 +612,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameManager: {fileID: 7256799182819420730, guid: 6a968689fea82f04db6fec55e0f0ddfb,
     type: 3}
-  coin: {fileID: 171168642575744558, guid: 9ff4e73597e768d46a1d1dfd1b9fd22c, type: 3}
+  coin: {fileID: 6445123460688982221, guid: 536768f26b50e0745b15b8cf6710d169, type: 3}
   turnRed: {r: 0.98039216, g: 0.43137255, b: 0.27450982, a: 0}
   turnRedDelay: 1
 --- !u!1 &2761125161281414289
@@ -735,7 +735,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameManager: {fileID: 7256799182819420730, guid: 6a968689fea82f04db6fec55e0f0ddfb,
     type: 3}
-  coin: {fileID: 171168642575744558, guid: 9ff4e73597e768d46a1d1dfd1b9fd22c, type: 3}
+  coin: {fileID: 6445123460688982221, guid: 536768f26b50e0745b15b8cf6710d169, type: 3}
   turnRed: {r: 0.98039216, g: 0.43137255, b: 0.27450982, a: 0}
   turnRedDelay: 1
 --- !u!1 &3965914122267260590
@@ -860,7 +860,7 @@ MonoBehaviour:
     type: 3}
   turnRed: {r: 0.98039216, g: 0.43137255, b: 0.27450982, a: 0}
   turnRedDelay: 1
-  Coin: {fileID: 171168642575744558, guid: 9ff4e73597e768d46a1d1dfd1b9fd22c, type: 3}
+  Coin: {fileID: 6445123460688982221, guid: 536768f26b50e0745b15b8cf6710d169, type: 3}
 --- !u!1 &3982109862332956890
 GameObject:
   m_ObjectHideFlags: 0
@@ -983,7 +983,7 @@ MonoBehaviour:
     type: 3}
   turnRed: {r: 0.98039216, g: 0.43137255, b: 0.27450982, a: 0}
   turnRedDelay: 1
-  Coin: {fileID: 171168642575744558, guid: 9ff4e73597e768d46a1d1dfd1b9fd22c, type: 3}
+  Coin: {fileID: 6445123460688982221, guid: 536768f26b50e0745b15b8cf6710d169, type: 3}
 --- !u!1 &4356522904543844382
 GameObject:
   m_ObjectHideFlags: 0
@@ -1104,7 +1104,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameManager: {fileID: 7256799182819420730, guid: 6a968689fea82f04db6fec55e0f0ddfb,
     type: 3}
-  coin: {fileID: 171168642575744558, guid: 9ff4e73597e768d46a1d1dfd1b9fd22c, type: 3}
+  coin: {fileID: 6445123460688982221, guid: 536768f26b50e0745b15b8cf6710d169, type: 3}
   turnRed: {r: 0.98039216, g: 0.43137255, b: 0.27450982, a: 0}
   turnRedDelay: 1
 --- !u!1 &5927080382351074484
@@ -1227,7 +1227,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameManager: {fileID: 7256799182819420730, guid: 6a968689fea82f04db6fec55e0f0ddfb,
     type: 3}
-  coin: {fileID: 171168642575744558, guid: 9ff4e73597e768d46a1d1dfd1b9fd22c, type: 3}
+  coin: {fileID: 6445123460688982221, guid: 536768f26b50e0745b15b8cf6710d169, type: 3}
   turnRed: {r: 0.98039216, g: 0.43137255, b: 0.27450982, a: 0}
   turnRedDelay: 1
 --- !u!1 &6755021446430998174
@@ -1352,7 +1352,7 @@ MonoBehaviour:
     type: 3}
   turnRed: {r: 0.98039216, g: 0.43137255, b: 0.27450982, a: 0}
   turnRedDelay: 1
-  Coin: {fileID: 171168642575744558, guid: 9ff4e73597e768d46a1d1dfd1b9fd22c, type: 3}
+  Coin: {fileID: 6445123460688982221, guid: 536768f26b50e0745b15b8cf6710d169, type: 3}
 --- !u!1 &7249860388965570986
 GameObject:
   m_ObjectHideFlags: 0
@@ -1473,7 +1473,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameManager: {fileID: 7256799182819420730, guid: 6a968689fea82f04db6fec55e0f0ddfb,
     type: 3}
-  coin: {fileID: 171168642575744558, guid: 9ff4e73597e768d46a1d1dfd1b9fd22c, type: 3}
+  coin: {fileID: 6445123460688982221, guid: 536768f26b50e0745b15b8cf6710d169, type: 3}
   turnRed: {r: 0.98039216, g: 0.43137255, b: 0.27450982, a: 0}
   turnRedDelay: 1
 --- !u!1 &7868789630750123947
@@ -1613,7 +1613,7 @@ MonoBehaviour:
     type: 3}
   specialOrbCount: []
   SpecialOrbsCountdown: 0
-  coin: {fileID: 171168642575744558, guid: 9ff4e73597e768d46a1d1dfd1b9fd22c, type: 3}
+  coin: {fileID: 6445123460688982221, guid: 536768f26b50e0745b15b8cf6710d169, type: 3}
   turntoCoin: 0
   turnRed: {r: 0.9811321, g: 0.43093586, b: 0.27305093, a: 0}
   turnRedDelay: 1
@@ -1737,7 +1737,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameManager: {fileID: 7256799182819420730, guid: 6a968689fea82f04db6fec55e0f0ddfb,
     type: 3}
-  coin: {fileID: 171168642575744558, guid: 9ff4e73597e768d46a1d1dfd1b9fd22c, type: 3}
+  coin: {fileID: 6445123460688982221, guid: 536768f26b50e0745b15b8cf6710d169, type: 3}
   turnRed: {r: 0.98039216, g: 0.43137255, b: 0.27450982, a: 0}
   turnRedDelay: 1
 --- !u!1 &8773635095524766536
@@ -1862,7 +1862,7 @@ MonoBehaviour:
     type: 3}
   turnRed: {r: 0.98039216, g: 0.43137255, b: 0.27450982, a: 0}
   turnRedDelay: 1
-  Coin: {fileID: 171168642575744558, guid: 9ff4e73597e768d46a1d1dfd1b9fd22c, type: 3}
+  Coin: {fileID: 6445123460688982221, guid: 536768f26b50e0745b15b8cf6710d169, type: 3}
 --- !u!1 &8995087662309113060
 GameObject:
   m_ObjectHideFlags: 0
@@ -1983,6 +1983,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameManager: {fileID: 7256799182819420730, guid: 6a968689fea82f04db6fec55e0f0ddfb,
     type: 3}
-  coin: {fileID: 171168642575744558, guid: 9ff4e73597e768d46a1d1dfd1b9fd22c, type: 3}
+  coin: {fileID: 6445123460688982221, guid: 536768f26b50e0745b15b8cf6710d169, type: 3}
   turnRed: {r: 0.98039216, g: 0.43137255, b: 0.27450982, a: 0}
   turnRedDelay: 1

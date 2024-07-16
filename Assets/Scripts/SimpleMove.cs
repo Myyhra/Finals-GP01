@@ -17,7 +17,7 @@ public class SimpleMove : MonoBehaviour
     bool isRotating = false;
 
     [SerializeField]float gridSize = 10f;
-    float threshold = 0.1f;
+    float threshold = 0.15f;
     void Awake()
     {
         controller = GetComponent<CharacterController>();
@@ -55,7 +55,7 @@ public class SimpleMove : MonoBehaviour
         wantsLeft = false;
         yield return new WaitUntil(() => IsOnGrid(transform.position.x, gridSize, threshold) && IsOnGrid(transform.position.z, gridSize, threshold));
         isRotating = true;
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(0.1f);
         rotationDeg += 90;
         transform.rotation = Quaternion.Euler(0, rotationDeg, 0);
         isRotating = false;
@@ -68,7 +68,7 @@ public class SimpleMove : MonoBehaviour
         wantsRight = false;
         yield return new WaitUntil(() => IsOnGrid(transform.position.x, gridSize, threshold) && IsOnGrid(transform.position.z, gridSize, threshold));
         isRotating = true;
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(0.1f);
         rotationDeg -= 90;
         transform.rotation = Quaternion.Euler(0, rotationDeg, 0);
         isRotating = false;
@@ -78,7 +78,8 @@ public class SimpleMove : MonoBehaviour
 
     bool IsOnGrid(float position, float gridSize, float threshold)
     {
-        return Mathf.Abs(position % gridSize) <= threshold || Mathf.Abs(position % gridSize - gridSize) <= threshold;
+        float nearestGridPoint = Mathf.Round(position / gridSize) * gridSize;
+        return Mathf.Abs(position - nearestGridPoint) <= threshold;
     }
     
 

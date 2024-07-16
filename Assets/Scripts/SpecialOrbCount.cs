@@ -11,15 +11,24 @@ public class SpecialOrbCount : MonoBehaviour
     [SerializeField] Color turnRed;
     bool isRed = false;
     [SerializeField] float turnRedDelay = 1.0f;
+    MeshRenderer meshRenderer;
+    SphereCollider collider;
+    public bool destroy = false;
 
     void Awake()
     {
         sphereRenderer = GetComponent<Renderer>();
         mainOrb = GetComponentInParent<SpecialOrb>();
+        meshRenderer = GetComponent<MeshRenderer>();
+        collider = GetComponent<SphereCollider>();
     }
     void Update()
     {
-            
+          if (destroy)  
+          {
+            meshRenderer.enabled = false;
+            collider.enabled = false;
+          }
     }
     void OnTriggerEnter(Collider other)
     {

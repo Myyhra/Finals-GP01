@@ -5,7 +5,6 @@ using UnityEngine;
 public class SpecialChildOrbs : MonoBehaviour
 {
     [SerializeField] GameManager gameManager;
-    SphereCollider collider;
     SpecialOrb mainOrb;
 
 
@@ -16,21 +15,31 @@ public class SpecialChildOrbs : MonoBehaviour
     bool isRed = false;
     [SerializeField] float turnRedDelay = 1.0f;
     [SerializeField] GameObject Coin;
+    MeshRenderer meshRenderer;
+    SphereCollider collider;
     // public bool turntoCoin = false;
+    public bool taken = false;
+    public bool destroy = false;
    void Awake()
     {
         sphereRenderer = GetComponent<Renderer>();
         mainOrb = GetComponentInParent<SpecialOrb>();
+        meshRenderer = GetComponent<MeshRenderer>();
+        collider = GetComponent<SphereCollider>();
     }
     void Update()
     {
-        
+        if (destroy)
+        {
+            meshRenderer.enabled = false;
+            collider.enabled = false;
+        }
     }
     void OnTriggerEnter(Collider other)
     {
         if(other.CompareTag("Player"))
         {
-            
+            taken = true;
             gameManager.OrbCount--;
             StartCoroutine("TurnRedDelay");
             if(isRed)

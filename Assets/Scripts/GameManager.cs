@@ -5,6 +5,7 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public int OrbCount;
+    public int coinCount;
     GameObject[] normalOrbs;
     GameObject[] specialOrbs;
     GameObject[] specialChildOrbs;
@@ -28,6 +29,7 @@ public class GameManager : MonoBehaviour
     {
         if(OrbCount <= 0)
         {
+            // OrbCount = 0;
             win = true;
         }
     }
