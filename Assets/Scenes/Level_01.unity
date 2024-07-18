@@ -111704,6 +111704,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameUI: {fileID: 59197293}
+  player: {fileID: 1847655417}
   audioSource: {fileID: 8984373631344958084}
   clip: {fileID: 8300000, guid: c47a343e72f0a5043ac7b5c000b35278, type: 3}
 --- !u!1 &7249860387973387595

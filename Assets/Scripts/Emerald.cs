@@ -5,6 +5,7 @@ using UnityEngine;
 public class Emerald : MonoBehaviour
 {
     [SerializeField] GameUI gameUI;
+    [SerializeField] SimpleMove player;
     public AudioSource audioSource;
     public AudioClip clip;
    void OnTriggerEnter(Collider other)
@@ -13,6 +14,7 @@ public class Emerald : MonoBehaviour
     {
         audioSource.PlayOneShot(clip);
         gameUI.playSound = true;
+        player.speed = 0;
     }
    }
 }
