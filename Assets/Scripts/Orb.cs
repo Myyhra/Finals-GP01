@@ -13,7 +13,7 @@ public class Orb : MonoBehaviour
     [SerializeField] float turnRedDelay = 1.0f;
     AudioSource audioSource;
     public AudioClip orbsound;
-    public bool isRed = false;
+    public bool isRed;
     void Start ()
     {
         audioSource = GetComponent<AudioSource>();
