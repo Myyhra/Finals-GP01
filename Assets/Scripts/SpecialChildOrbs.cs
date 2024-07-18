@@ -6,8 +6,10 @@ public class SpecialChildOrbs : MonoBehaviour
 {
     [SerializeField] GameManager gameManager;
     SpecialOrb mainOrb;
+    [SerializeField] SimpleMove player;
 
-
+    AudioSource audioSource;
+    public AudioClip orbsound;
 
     //Render
     Renderer sphereRenderer;
@@ -26,6 +28,8 @@ public class SpecialChildOrbs : MonoBehaviour
         mainOrb = GetComponentInParent<SpecialOrb>();
         meshRenderer = GetComponent<MeshRenderer>();
         collider = GetComponent<SphereCollider>();
+        audioSource = GetComponent<AudioSource>();
+
     }
     void Update()
     {
@@ -41,6 +45,7 @@ public class SpecialChildOrbs : MonoBehaviour
         {
             taken = true;
             gameManager.OrbCount--;
+            audioSource.PlayOneShot(orbsound);
             StartCoroutine("TurnRedDelay");
             if(isRed)
             {

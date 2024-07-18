@@ -5,22 +5,35 @@ using UnityEngine;
 
 public class Orb : MonoBehaviour
 {
+    [SerializeField] SimpleMove player;
+
     Renderer sphereRenderer;
     [SerializeField] Color turnRed;
     [SerializeField] GameManager gameManager;
     [SerializeField] float turnRedDelay = 1.0f;
-    bool isRed = false;
+    AudioSource audioSource;
+    public AudioClip orbsound;
+    public bool isRed = false;
     void Start ()
     {
+        audioSource = GetComponent<AudioSource>();
         sphereRenderer = GetComponent<Renderer>();
     }
     
+    void Update()
+    {
+        if(isRed)
+        {
+        sphereRenderer.material.color = turnRed;
+        }
+    }
     void OnTriggerEnter(Collider collided)
     {
         if (collided.CompareTag("Player"))
         {
+            player.speedRatio += 0.01;
             gameManager.OrbCount--;
-            sphereRenderer.material.color = turnRed;
+            audioSource.PlayOneShot(orbsound);
             StartCoroutine("TurnRedDelay");
 
             if(isRed)

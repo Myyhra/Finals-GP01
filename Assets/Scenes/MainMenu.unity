@@ -805,6 +805,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -7.9128695
       objectReference: {fileID: 0}
+    - target: {fileID: 9164106819357778768, guid: a703cd2777acffa48b7d90f4513276be,
+        type: 3}
+      propertyPath: m_BackGroundColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164106819357778768, guid: a703cd2777acffa48b7d90f4513276be,
+        type: 3}
+      propertyPath: m_BackGroundColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164106819357778768, guid: a703cd2777acffa48b7d90f4513276be,
+        type: 3}
+      propertyPath: m_BackGroundColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164106819357778768, guid: a703cd2777acffa48b7d90f4513276be,
+        type: 3}
+      propertyPath: m_BackGroundColor.r
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9196165175036342822, guid: a703cd2777acffa48b7d90f4513276be,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1418,7 +1438,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 505, y: 250.74}
-  m_SizeDelta: {x: 100, y: 100}
+  m_SizeDelta: {x: 109.6, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1001866697
 MonoBehaviour:
@@ -1944,7 +1964,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 470.8, y: 250.74}
-  m_SizeDelta: {x: 198.69995, y: 50}
+  m_SizeDelta: {x: 219.39, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1878518717
 MonoBehaviour:
@@ -1966,7 +1986,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Running Mann
+  m_text: Running Manne
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

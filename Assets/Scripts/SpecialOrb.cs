@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class SpecialOrb : MonoBehaviour
 {
+    [SerializeField] SimpleMove player;
+
     [SerializeField] GameManager gameManager;
 
     Transform[] specialOrbTransform;
@@ -24,6 +26,9 @@ public class SpecialOrb : MonoBehaviour
 
     MeshRenderer meshRenderer;
     SphereCollider collider;
+
+    AudioSource audioSource;
+    public AudioClip orbsound;
     void Start()
     {
         sphereRenderer = GetComponent<Renderer>();
@@ -36,6 +41,9 @@ public class SpecialOrb : MonoBehaviour
         
         meshRenderer = GetComponent<MeshRenderer>();
         collider = GetComponent<SphereCollider>();
+
+        audioSource = GetComponent<AudioSource>();
+
 
         SpecialOrbsCountdown = specialOrbCount.Length;
     }
@@ -93,6 +101,7 @@ public class SpecialOrb : MonoBehaviour
     {
         // specialOrbCount--;
         gameManager.OrbCount--;
+        audioSource.PlayOneShot(orbsound);
         StartCoroutine("TurnRedDelay");
         if(isRed)
         {
